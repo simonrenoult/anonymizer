@@ -7,8 +7,16 @@
     <h1>JSON Anonymizer</h1>
     <h2>Data:</h2>
     <form id="anonymisation">
-        <textarea name="json-source" cols="80" rows="10">{ "name": "clark kent", "alias": "superman", "age": 30 }</textarea> <br>
-        <input value="name" type="text" name="keysToIgnore" size="80"> <br>
+        JSON to anonymize: <br>
+
+        <textarea name="json-source" cols="80" rows="10">{ "name": "clark kent", "alias": "superman", "age": 30 }</textarea>
+
+        <br>
+
+        List of keys to ignore (separate with comma or blank space): <input value="name" type="text" name="keysToIgnore" size="80">
+
+        <br>
+
         <input type="submit" value="Anonymiser">
     </form>
 
