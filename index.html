@@ -5,13 +5,15 @@
 </head>
 <body>
     <h1>JSON Anonymizer</h1>
+    <h2>Data:</h2>
     <form id="anonymisation">
         <textarea name="json-source" placeholder="json to anonymize" cols="30" rows="10"></textarea> <br>
         <input placeholder="keys to ignore" type="text" name="keysToIgnore"> <br>
         <input type="submit" value="Anonymiser">
     </form>
 
-    <div id="result"></div>
+    <h2>Result:</h2>
+    <div id="result">None yet.</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./anonimisation.js"></script>
