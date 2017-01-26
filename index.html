@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Anonymiser</title>
+    <title>Anonymizer</title>
 </head>
 <body>
     <h1>JSON Anonymizer</h1>
     <h2>Data:</h2>
     <form id="anonymisation">
-        JSON to anonymize: <br>
-
-        <textarea name="json-source" cols="80" rows="10">{ "name": "clark kent", "alias": "superman", "age": 30 }</textarea>
-
-        <br>
-
-        List of keys to ignore (separate with comma or blank space): <input value="alias" type="text" name="keysToIgnore" size="80">
+        <div>
+          JSON to anonymize:
+          <br>
+          <textarea name="json-source" cols="80" rows="10">{ "name": "clark kent", "alias": "superman", "age": 30 }</textarea>
+        </div>
 
         <br>
 
-        <input type="submit" value="Anonymiser">
+        <div>
+          List of keys to ignore (separate with comma or blank space):
+          <br>
+          <input value="alias" type="text" name="keysToIgnore" size="80">
+        </div>
+
+        <br>
+
+        <div>
+          <input type="submit" value="Anonymiser">
+        </div>
     </form>
 
     <h2>Result:</h2>
     <div id="result">None yet.</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./anonimisation.js"></script>
+    <script src="./anonymizer.js"></script>
 </body>
 </html>
